@@ -20,6 +20,7 @@ public class DataSourcesAndPool {
     public void pool() throws SQLException {
         MysqlConnectionPoolDataSource poolDataSource = new MysqlConnectionPoolDataSource();
         //provides support for managing a pool of connections, allowing for efficient reuse of connections across multiple client requests.
+        // insert your database name, username and password
         poolDataSource.setURL("jdbc:mysql://localhost:3306/mydatabase");
         poolDataSource.setUser("username");
         poolDataSource.setPassword("password");
